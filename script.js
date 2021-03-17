@@ -18,8 +18,6 @@
 	// perform volumne change in machine after user releases the slider
 	volumeSlider.onmouseup = function() {
 	  volumeIndicator.innerHTML = this.value;
-		console.log("external javscript test");
-		
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
 			return false;
@@ -40,7 +38,6 @@
 	// call when page loads
 	function initVolume(){
 		console.log("initVolume called");
-		console.log("external javscript test");
 		// check if the browser support localStorage 
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
