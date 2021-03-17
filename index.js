@@ -51,7 +51,7 @@ document.write(`
 						<tr>
 							<td><img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/media-pict-volume.png" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
-							<td valign="center"><b>Volume:</b></td>
+							<td valign="center" style="width:71px"><b>Volume:</b></td>
 							<td>&nbsp;</td>
 							<td><span id="volumeIndicator">Loading...</span></td>
 							<td>/10</td>
@@ -68,9 +68,9 @@ document.write(`
 						<tr>
 							<td><img src="https://cdn0.iconfinder.com/data/icons/linear-square-v2/100/adjust-512.png" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
-							<td><b>Bass:</b>
-							</td><td>&nbsp;</td>
-							<td><span id="baseIndicator">Loading...</span> </td>
+							<td style="width:71px"><b>Bass:</b></td>
+							<td>&nbsp;</td>
+							<td><span id="baseIndicator">Loading...</span></td>
 							<td>/10</td>
 							<td><input name="base" type="range" value="5" min="0" max="10" id="baseSlider"></td>
 							<td><input name="btnBaseSet" type="submit" value="Submit" id="btnBaseSet" style="display: none;"></td>
@@ -84,7 +84,7 @@ document.write(`
 						<tr>
 							<td><img src="./Station.jpg" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
-							<td><b>Station</b></td>
+							<td style="width:80px"><b>Station: </b></td>
 							<td>
 							<select name="station" id="station">
 								<option value="1">Radio HK</option>
