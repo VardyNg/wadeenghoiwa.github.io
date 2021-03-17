@@ -17,7 +17,15 @@
 
 	// perform volumne change in machine after user releases the slider
 	volumeSlider.onmouseup = function() {
-	  volumeIndicator.innerHTML = this.value;
+		var paddingZero = 0;
+		var paddingString = paddingZero.toString();
+		var volumeString = this.value.toString();
+		if(this.value < 10){
+			volumeIndicator.innerHTML = paddingString.concat(volumeString);
+		}else{
+			volumeIndicator.innerHTML = volumeString;
+		}
+	  
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
 			return false;
