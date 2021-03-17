@@ -6,11 +6,6 @@ document.write(`
 	<title>2021 S1 Internet Radio App</title>
 	<link href="https://wadeenghoiwa.github.io/mchp.css" rel="stylesheet" type="text/css" />
 	<script src="https://wadeenghoiwa.github.io/script.js"></script>
-	<style>
-		body {
-		  background-color: F6FF00;
-		}
-	</style>
 </head>
 <body onLoad="allowAJAX=true;" onUnload="allowAJAX=false;">
 	<div id="shadow-one">
@@ -34,7 +29,7 @@ document.write(`
 	<div>
 		<h1>WELCOME TO INTERNET RADIO APPLICATION</h1>
 		<hr width="100%" size="4" color="436ab7" />
-		<table broder="1";>
+		<table>
 			<!-- MAC ADDRESS -->
 			<tr>
 				<form method="post" action="updatemac.htm">
@@ -108,8 +103,8 @@ document.write(`
 					</table>
 				</form>
 			</tr>
-
-			<table style="padding-left: 10px;">
+		</table>
+		<table style="padding-left: 10px;">
 			<!--
 			<tr><td><b>Current Station Information:</b></td>
 			<tr><td>~CurrentStationName~</td></tr>
