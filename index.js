@@ -7,8 +7,6 @@ document.write(`
 		<tr>
 			<form method="post" action="updatemac.htm">
 				<table style="padding-left: 0px; color:blue;">
-					<tr><td><b>Stack Version:</b></td><td>&nbsp;</td><td>~version~</td></tr>
-					<tr><td><b>Build Date:</b></td><td>&nbsp;</td><td>~builddate~</td></tr>
 					<tr><td><b>MAC Address:</b></td><td>&nbsp;</td>
 						<td><input name="txtMAC" id="txtMAC" type="text" value="~config_mac~"/></td>
 						<td><input name="btnSaveMAC" id="btnSaveMAC" type="submit" value="Save" /></td> 
