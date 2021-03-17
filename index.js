@@ -33,7 +33,7 @@ document.write(`
 			<!-- MAC ADDRESS -->
 			<tr>
 				<form method="post" action="updatemac.htm">
-					<table>
+					<table style="margin-top: 5px; margin-bottom: 10px">
 						<tr>
 							<td><b>MAC Address:</b></td><td>&nbsp;</td>
 							<td><input name="txtMAC" id="txtMAC" type="text" value="~config_mac~"/></td>
