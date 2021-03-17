@@ -40,7 +40,14 @@
 	
 	// update the volumeIndicator whenever the slider has value change, so that the webpage looks responsive
 	volumeSlider.oninput = function(){
-		volumeIndicator.innerHTML = this.value;
+		var paddingZero = 0;
+		var paddingString = paddingZero.toString();
+		var volumeString = this.value.toString();
+		if(this.value < 10){
+			volumeIndicator.innerHTML = paddingString.concat(volumeString);
+		}else{
+			volumeIndicator.innerHTML = volumeString;
+		}
 	}
 	
 	// call when page loads
@@ -61,8 +68,16 @@
 			}else{
 			// if the page is previously loaded (reloaded in the brwoser), set the volume back to previously defined value
 				volumeSlider.value = localStorage.getItem('volume').toString();
-				volumeIndicator.innerHTML = localStorage.getItem('volume').toString();
 				console.log("volume is set back to" + localStorage.getItem('volume'));
+				
+				var paddingZero = 0;
+				var paddingString = paddingZero.toString();
+				var volumeString = localStorage.getItem('volume').toString();
+				if(this.value < 10){
+					volumeIndicator.innerHTML = paddingString.concat(volumeString);
+				}else{
+					volumeIndicator.innerHTML = volumeString;
+				}
 			}
 		}
 	}
