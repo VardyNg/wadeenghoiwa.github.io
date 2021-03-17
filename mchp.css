@@ -5,6 +5,11 @@ body {
 	padding: 0 0 20px 0;
 }
 
+h1{
+	margin: auto;
+}
+
+
 #shadow-one {
 	width: 760px;
 	border: 10px solid #555;
