@@ -2,14 +2,13 @@ body {
 	font-family: Verdana, Arial, sans-serif;
 	background: #F6FF00;
 	margin-top: 20px;
-	margin: 0px auto;
 	padding: 0 0 20px 0;
 }
 
 #shadow-one {
 	width: 760px;
-	border: 1px solid #555;
-	border-top: 0;
+	border: 10px solid #555;
+	border-top: ;
 	margin: 0px auto;
 }
 #shadow-two {
