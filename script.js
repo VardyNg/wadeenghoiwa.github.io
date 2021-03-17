@@ -40,6 +40,7 @@
 	// call when page loads
 	function initVolume(){
 		console.log("initVolume called");
+		console.log("external javscript test");
 		// check if the browser support localStorage 
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
