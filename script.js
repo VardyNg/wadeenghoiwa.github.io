@@ -166,6 +166,7 @@
 	  initVolume();
 	  initBase();
 	  initStation();
+		console.log("window loaded");
 	}
 	
 	macAddressField.oninput = function(){
