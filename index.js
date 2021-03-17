@@ -1,5 +1,37 @@
 document.write(`
-<div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "DTD/xhtml1-strict.dtd">
+<html>
+<head>
+
+	<title>2021 S1 Internet Radio App</title>
+	<link href="https://wadeenghoiwa.github.io/mchp.css" rel="stylesheet" type="text/css" />
+	<script src="https://wadeenghoiwa.github.io/script.js"></script>
+	<style>
+		body {
+		  background-color: F6FF00;
+		}
+	</style>
+</head>
+<body onLoad="allowAJAX=true;" onUnload="allowAJAX=false;">
+	<div id="shadow-one">
+	<div id="shadow-two">
+	<div id="shadow-three">
+	<div id="shadow-four">
+	<div id="page" style=" background-color : F6FF00; height: 100%;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;">
+
+	<div style="padding:0 0 5px 5px"> 
+		<img src="https://www.polyu.edu.hk/assets/img/main-logo-1x.png" alt="HTML5 Icon" style="height:72px;"/>
+	</div>
+
+
+	<div id="title" style="background-color:rgb(255, 255, 31);color:black;">
+		<div class="left">TM1109 EIE IMT Project </div>
+	</div>
+
+	<div>
 	<h1>WELCOME TO INTERNET RADIO APPLICATION</h1>
 	<hr width="100%" size="4" color="436ab7" />
 	<table>
@@ -74,5 +106,11 @@ document.write(`
 	</table>
 </div>
 <script src="https://wadeenghoiwa.github.io/script.js"></script>
+<div class="spacer">&nbsp;</div>
 
+<div id="footer">Copyright &copy; 2019 EiA, Industrial Centre, The Hong Kong Polytechnic University.</div>
+
+</div></div></div></div></div>
+</body>
+</html>
 `);
