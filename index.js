@@ -111,7 +111,6 @@ document.write(`
 			<tr><td>~CurrentStationURL~</td></tr>
 			<tr><td>~CurrentSong~</td></tr>
 			-->
-			</table>
 			<hr width="100%" size="4" color="CD5C5C" />
 		</table>
 	</div>
