@@ -12,7 +12,7 @@
 		var selectedStationIndex;
 		var macAddressField = document.getElementById("txtMAC");
 		var macAddressField2 = document.getElementById("txtMAC2");
-		var maacAddress = document.getElementById("macAddress");
+		var maacAddress = document.getElementById("macAddress").value;
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
