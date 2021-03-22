@@ -237,6 +237,10 @@
 		}
 	}
 
+	btnSetMac.addEventListener("click", function() {
+		console.log("btnSetMac clicked");
+		window.localStorage["MACAddress"] = macAddressField.value;
+	});
 	window.onload = function() {
 	  	initVolume();
 	  	initBase();
@@ -244,8 +248,3 @@
 		initalMacAddress();
 		console.log("window loaded");
 	}
-		
-	macAddressField2.onload = function(){
-		initalMacAddress();
-	}
-		
