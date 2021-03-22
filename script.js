@@ -241,7 +241,7 @@
 	  	initVolume();
 	  	initBase();
 	  	initStation();
-		
+		initalMacAddress();
 		console.log("window loaded");
 	}
 		
