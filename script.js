@@ -220,8 +220,8 @@
 			var macOK = false;
 			do{			
 				console.log("Loading mac");
-				if(localStorage.getItem["MACaddress"] != null || localStorage.getItem["MACaddress"] != "~config_mac~"){
-					macAddressField.value = localStorage.getItem["MACAddress"];
+				if(window.localStorage["MACAddress"] != null || window.localStorage["MACAddress"] != "~config_mac~"){
+					macAddressField.value = window.localStorage["MACAddress"];
 					macOS = true;
 				}
 			}while(!macOK)
