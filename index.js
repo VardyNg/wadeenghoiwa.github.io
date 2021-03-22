@@ -33,7 +33,7 @@ document.write(`
 		<h1>WELCOME TO INTERNET RADIO APPLICATION</h1>
 		<hr width="100%" size="4" color="436ab7" />
 		<table>
-			<!-- MAC ADDRESS 
+			<!-- MAC ADDRESS -->
 			<tr>
 				<form method="post" action="updatemac.htm">
 					<table style="margin-top: 5px; margin-bottom: 10px">
@@ -46,7 +46,6 @@ document.write(`
 					</table>				
 				</form>
 			</tr>
-			-->
 			<tr>
 				<!-- VOLUME AJUSTMENT -->
 				<form method="get" action="index.htm">
