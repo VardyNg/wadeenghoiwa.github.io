@@ -112,7 +112,15 @@
 	
 	// update the baseIndicator whenever the slider has value update, so that the wbpages 
 	baseSlider.oninput = function(){
-		baseIndicator.innerHTML = this.value;	
+		
+		var paddingZero = 0;
+		var paddingString = paddingZero.toString();
+		var baseString = this.value.toString();
+		if(localStorage.getItem('volume') < 10){
+			baseIndicator.innerHTML = paddingString.concat(baseString);
+		}else{
+			baseIndicator.innerHTML = baseString;
+		}
 	}
 	
 	// call when page loads
