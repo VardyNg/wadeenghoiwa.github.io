@@ -128,13 +128,22 @@
 			if(localStorage.getItem("base") === null){
 				console.log("base is not created, initalized");
 				storage["base"] = 6;		
-				adjustVolume(localStorage.getItem("base"));
+				adjustBase(localStorage.getItem("base"));
 				baseSlider.value = localStorage.getItem('base').toString();				
 			}else{
 			// if the page is previously loaded (reloaded in the brwoser), set the base back to previously defined value
-				baseSlider.value = localStorage.getItem('base').toString();
-				baseIndicator.innerHTML = localStorage.getItem('base').toString();
 				console.log("base is set back to" + localStorage.getItem('base'));
+				
+				var paddingZero = 0;
+				var paddingString = paddingZero.toString();
+				var baseString = localStorage.getItem('base').toString();
+				if(localStorage.getItem('base') < 10){
+					baseIndicator.innerHTML = paddingString.concat(baseString);
+					console.log("padding added");
+				}else{
+					baseIndicator.innerHTML = baseString;
+					console.log("padding is not added");
+				}
 			}
 		}
 	}
