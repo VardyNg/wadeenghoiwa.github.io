@@ -34,6 +34,20 @@ document.write(`
 		<hr width="100%" size="4" color="436ab7" />
 		<table>
 			<!-- MAC ADDRESS -->
+			<p>
+<form method="post" action="updatemac.htm">
+<table style="padding-left: 15px; color:blue;">
+<tr><td><b>Stack Version:</b></td><td>&nbsp;</td><td>~version~</td></tr>
+<tr><td><b>Build Date:</b></td><td>&nbsp;</td><td>~builddate~</td></tr>
+<tr><td><b>MAC Address:</b></td><td>&nbsp;</td><td>
+                <input name="txtMAC" id="txtMAC" type="text" value="~config_mac~"/></td>
+                <td>
+                <input name="btnSaveMAC" type="submit" value="Save" /></td> 
+				<td><span style="color:red;" id="MacAddressInvalidWarning"></span></td>
+				
+</table>				
+</form>
+</p>
 			<tr>
 				<form method="post" action="updatemac.htm">
 					<table style="margin-top: 5px; margin-bottom: 10px">
