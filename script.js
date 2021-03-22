@@ -221,6 +221,7 @@
 			return false;
 		}else{
 			var maacAddress = document.getElementById("macAddress").value;
+			console.log("Mac address is "+macAddress);
 			window.localStorage["MACAddress"] = macAddress;
 			macAddressField.value = window.localStorage["MACAddress"];
 		}
