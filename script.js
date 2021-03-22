@@ -220,7 +220,7 @@
 			console.log("This browser doesn not support localStorage");
 			return false;
 		}else{
-			var address = document.getElementById("macAddress").value;
+			var address = macAddressField2.value;//document.getElementById("macAddress").value;
 			console.log("Mac address is "+ address);
 			console.log("Mac address is "+ macAddressField2.value);
 			window.localStorage["MACAddress"] = address;
