@@ -1,13 +1,8 @@
   
 document.write(`
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "DTD/xhtml1-strict.dtd">
-<html>
-  <head>
-    
-  </head>
+  <script src="https://wadeenghoiwa.github.io/header.js"></script> 
 
-  <body>
     <h1>Successful!</h1>
-  </body
-</html>
+
+  <script src="https://wadeenghoiwa.github.io/footer.js"></script> 
 `);
