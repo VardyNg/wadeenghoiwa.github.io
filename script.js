@@ -217,7 +217,15 @@
 			console.log("This browser doesn not support localStorage");
 			return false;
 		}else{
-			macAddressField.value = localStorage.getItem["MACAddress"];
+			bool macOK = false;
+			do{			
+				console.log("Loading mac");
+				if(localStorage.getItem["MACaddress"] != null || localStorage.getItem["MACaddress"] != "~config_mac~"){
+					macAddressField.value = localStorage.getItem["MACAddress"];
+					macOS = true;
+				}
+			}while(!macOK)
+			
 		}
 	}
 
