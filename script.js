@@ -97,7 +97,15 @@
 	
 	// perform base change in machine after 
 	baseSlider.onmouseup = function(){
-		baseIndicator.innerHTML = this.value;
+		var paddingZero = 0;
+		var paddingString = paddingZero.toString();
+		var baseString = this.value.toString();
+		if(localStorage.getItem('volume') < 10){
+			baseIndicator.innerHTML = paddingString.concat(baseString);
+		}else{
+			baseIndicator.innerHTML = baseString;
+		}
+		
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
 			return false;
