@@ -11,6 +11,7 @@
 		var btnSetStation = document.getElementById("btnStationSet");
 		var selectedStationIndex;
 		var macAddressField = document.getElementById("txtMAC");
+		var macAddressField2 = document.getElementById("txtMAC2");
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
@@ -217,15 +218,7 @@
 			console.log("This browser doesn not support localStorage");
 			return false;
 		}else{
-			var macOK = false;
-			do{			
-				console.log("Loading mac");
-				if(window.localStorage["MACAddress"] != null || window.localStorage["MACAddress"] != "~config_mac~"){
-					macAddressField.value = window.localStorage["MACAddress"];
-					macOS = true;
-				}
-			}while(!macOK)
-			
+			macAddressField.value = window.localStorage["MACAddress"];
 		}
 	}
 
@@ -247,6 +240,11 @@
 	  	initVolume();
 	  	initBase();
 	  	initStation();
-		initalMacAddress();
+		
 		console.log("window loaded");
 	}
+		
+	macAddressField2.onload = function(){
+		initalMacAddress();
+	}
+		
