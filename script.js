@@ -218,7 +218,6 @@
 	  initStation();
 		console.log("window loaded");
 	}
-	
 	macAddressField.oninput = function(){
 		console.log("entering MAC");
 		var regexp = /^(([A-Fa-f0-9]{2}[:]){5}[A-Fa-f0-9]{2}[,]?)+$/i;
