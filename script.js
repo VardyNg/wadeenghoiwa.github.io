@@ -78,7 +78,7 @@
 					console.log("padding added;);
 				}else{
 					volumeIndicator.innerHTML = volumeString;
-					console.log("padding is not added;);
+					console.log("padding is not added");
 				}
 			}
 		}
