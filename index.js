@@ -120,7 +120,7 @@ document.write(`
 	<script src="https://wadeenghoiwa.github.io/script.js"></script>
 	<div class="spacer">&nbsp;</div>
 
-<div id="footer">Copyright &copy; 2019 EiA, Industrial Centre, The Hong Kong Polytechnic University.</div>
+<div id="footer">Internet Radio, Developed by IC2140 2021 S1 </div>
 
 </div></div></div></div></div>
 </body>
