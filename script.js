@@ -212,12 +212,16 @@
 		btnSetStation.click();
 	}
 	
-	window.onload = function() {
-	  initVolume();
-	  initBase();
-	  initStation();
-		console.log("window loaded");
+	function initalMacAddress(){
+		if(!window.localStorage){
+			console.log("This browser doesn not support localStorage");
+			return false;
+		}else{
+			macAddressField.value = localStorage.getItem["MACAddress"];
+		}
 	}
+
+	
 	macAddressField.oninput = function(){
 		console.log("entering MAC");
 		var regexp = /^(([A-Fa-f0-9]{2}[:]){5}[A-Fa-f0-9]{2}[,]?)+$/i;
@@ -229,4 +233,12 @@
 			macAddressInvalidWarning.textContent = "";		
 			btnSaveMAC.disabled = false;
 		}
+	}
+
+	window.onload = function() {
+	  	initVolume();
+	  	initBase();
+	  	initStation();
+		initalMacAddress();
+		console.log("window loaded");
 	}
