@@ -75,7 +75,7 @@
 				var volumeString = localStorage.getItem('volume').toString();
 				if(this.value < 10){
 					volumeIndicator.innerHTML = paddingString.concat(volumeString);
-					console.log("padding added;);
+					console.log("padding added");
 				}else{
 					volumeIndicator.innerHTML = volumeString;
 					console.log("padding is not added");
