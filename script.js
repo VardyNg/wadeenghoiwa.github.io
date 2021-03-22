@@ -220,6 +220,7 @@
 	}
 	
 	macAddressField.oninput = function(){
+		console.log("entering MAC");
 		var regexp = /^(([A-Fa-f0-9]{2}[:]){5}[A-Fa-f0-9]{2}[,]?)+$/i;
 		var mac_address = macAddressField.value;
 		if(!regexp.test(mac_address)) {
