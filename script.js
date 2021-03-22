@@ -12,7 +12,7 @@
 		var selectedStationIndex;
 		var macAddressField = document.getElementById("txtMAC");
 		var macAddressField2 = document.getElementById("txtMAC2");
-		var maacAddress = document.getElementById("macAddress").value;
+		
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
@@ -220,6 +220,7 @@
 			console.log("This browser doesn not support localStorage");
 			return false;
 		}else{
+			var maacAddress = document.getElementById("macAddress").value;
 			window.localStorage["MACAddress"] = macAddress;
 			macAddressField.value = window.localStorage["MACAddress"];
 		}
