@@ -82,7 +82,7 @@ document.write(`
 				<form method="get" action="index.htm">
 					<table>
 						<tr>
-							<td><img src="./Station.jpg" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
+							<td><img src="https://i.ibb.co/zQnq25f/Station.jpg" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
 							<td style="width:80px"><b>Station: </b></td>
 							<td>
