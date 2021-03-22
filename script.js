@@ -12,7 +12,6 @@
 		var selectedStationIndex;
 		var macAddressField = document.getElementById("txtMAC");
 		var macAddressField2 = document.getElementById("txtMAC2");
-		
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
@@ -172,6 +171,7 @@
 		btnSetBase.click();
 	}
 	
+	// change station when a new option is picked
 	stationDropDownMenu.onchange = function (){
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
@@ -183,7 +183,6 @@
 		}
 		// adjust volume in the machine
 		changeStation(this.value);
-
 	}
 	
 	// call when page loads
@@ -209,11 +208,13 @@
 		}
 	}
 	
+	// perform change station
 	function changeStation(station){
 		console.log("set station to " + station);
 		btnSetStation.click();
 	}
 	
+	// load and display mac address from memory 
 	function initalMacAddress(){
 		console.log("inital mac address called");
 		if(!window.localStorage){
@@ -228,7 +229,7 @@
 		}
 	}
 
-	
+	// mac address validation
 	macAddressField.oninput = function(){
 		console.log("entering MAC");
 		var regexp = /^(([A-Fa-f0-9]{2}[:]){5}[A-Fa-f0-9]{2}[,]?)+$/i;
@@ -241,11 +242,13 @@
 			btnSaveMAC.disabled = false;
 		}
 	}
-
+	
+	// update mac address in memory
 	btnSetMac.addEventListener("click", function() {
 		console.log("btnSetMac clicked");
 		window.localStorage["MACAddress"] = macAddressField.value;
 	});
+
 	window.onload = function() {
 	  	initVolume();
 	  	initBase();
