@@ -214,6 +214,7 @@
 	}
 	
 	function initalMacAddress(){
+		console.log("inital mac address called");
 		if(!window.localStorage){
 			console.log("This browser doesn not support localStorage");
 			return false;
