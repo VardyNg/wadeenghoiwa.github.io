@@ -297,6 +297,6 @@
 	  	initVolume2();
 	  	initBase2();
 	  	initStation2();
-		iniMacAddress2();
+		initMacAddress2();
 		console.log("window loaded");
 	}
