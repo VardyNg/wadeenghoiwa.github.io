@@ -73,15 +73,8 @@ document.write(`
 				</form>
 			</tr>
 		</table>
-		<table style="padding-left: 10px;">
-			<!--
-			<tr><td><b>Current Station Information:</b></td>
-			<tr><td>~CurrentStationName~</td></tr>
-			<tr><td>~CurrentStationURL~</td></tr>
-			<tr><td>~CurrentSong~</td></tr>
-			-->
-			<hr width="100%" size="4" color="CD5C5C" />
-		</table>
+		<hr width="100%" size="4" color="CD5C5C" />
+		<br>
 
 	<button type="button" onclick="reloadPage();">Click to Reload</button>
  
