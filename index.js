@@ -18,7 +18,7 @@ document.write(`
 				<form method="get" action="index.htm">
 					<table>
 						<tr>
-							<td><img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/media-pict-volume.png" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
+							<td><img src="https://wadeenghoiwa.github.io/img/volume.png" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
 							<td valign="center" style="width:71px"><b>Volume:</b></td>
 							<td>&nbsp;</td>
@@ -35,7 +35,7 @@ document.write(`
 				<form method="get" action="index.htm">
 					<table>
 						<tr>
-							<td><img src="https://cdn0.iconfinder.com/data/icons/linear-square-v2/100/adjust-512.png" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
+							<td><img src="https://https://wadeenghoiwa.github.io/img/base.webp" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
 							<td style="width:71px"><b>Bass:</b></td>
 							<td>&nbsp;</td>
@@ -51,7 +51,7 @@ document.write(`
 				<form method="get" action="index.htm">
 					<table>
 						<tr>
-							<td><img src="https://i.ibb.co/zQnq25f/Station.jpg" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
+							<td><img src="https://wadeenghoiwa.github.io/img/station.jpg" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
 							<td style="width:80px"><b>Station: </b></td>
 							<td>
