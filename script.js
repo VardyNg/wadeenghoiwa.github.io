@@ -1,20 +1,27 @@
 
 	type="text/javascript"
-	
+		// VOLUME
 		var volumeSlider = document.getElementById("volumeSlider"); // the volume slider 
 		var volumeIndicator = document.getElementById("volumeIndicator"); // the volume index
 		var btnSetVolume = document.getElementById("btnVolSet"); // hidden button to submit the form
+
+		// BASE
 		var baseSlider = document.getElementById("baseSlider"); // the base slider 
 		var baseIndicator = document.getElementById("baseIndicator"); // the base index
 		var btnSetBase = document.getElementById("btnBaseSet"); // hidden button to submit the form
+
+		// STATIONS
 		var stationDropDownMenu = document.getElementById("station");
 		var btnSetStation = document.getElementById("btnStationSet");
 		var selectedStationIndex;
+
+		// MAC ADDRESS
 		var macAddressField = document.getElementById("txtMAC");
 		var macAddressField2 = document.getElementById("txtMAC2");
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
-		var btnSetMac = document.getElementById("btnSaveMAC"	);
+		var btnSetMac = document.getElementById("btnSaveMAC");
 
+		// MACHINE INFORMATION
 		var machineMacAddress = document.getElementById("txtMAC2");
 		var machineVolume = document.getElementById("txtVolume2");
 		var machineBase = document.getElementById("txtBase2");
@@ -25,7 +32,7 @@
 				console.log("This browser doesn not support localStorage");
 				return false;
 			}else{
-				console.log("Mac address set");
+				console.log("Machine Mac Address loaded");
 				window.localStorage["MACAddress"] = machineMacAddress.value;		 			
 			}
 		}
@@ -35,7 +42,7 @@
 				console.log("This browser doesn not support localStorage");
 				return false;
 			}else{
-				console.log("base");
+				console.log("Machine Base Address loaded");
 				window.localStorage["base"] = machineBase.value;		 			
 			}
 		}
@@ -45,7 +52,7 @@
 				console.log("This browser doesn not support localStorage");
 				return false;
 			}else{
-				console.log("volume set");
+				console.log("Machine Volume Address loaded");
 				window.localStorage["volume"] = machineVolume.value;		 			
 			}
 		}
@@ -55,7 +62,7 @@
 				console.log("This browser doesn not support localStorage");
 				return false;
 			}else{
-				console.log("station set");
+				console.log("Machine Station Address loaded");
 				window.localStorage["station"] = machineStations.value;		 			
 			}
 		}
@@ -198,6 +205,8 @@
 					var paddingZero = 0;
 					var paddingString = paddingZero.toString();
 					var baseString = localStorage.getItem('base').toString();
+					baseSlider.value = localStorage.getItem('base').toString();			
+					
 					if(localStorage.getItem('base') < 10){
 						baseIndicator.innerHTML = paddingString.concat(baseString);
 						console.log("padding added");
