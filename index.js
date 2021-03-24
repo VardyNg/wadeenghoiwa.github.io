@@ -86,3 +86,4 @@ document.write(`
 		</table>
 	</div>
 <script src="https://wadeenghoiwa.github.io/footer.js"></script> 
+`);
