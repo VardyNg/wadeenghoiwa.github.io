@@ -13,14 +13,14 @@
 		var macAddressField = document.getElementById("txtMAC");
 		var macAddressField2 = document.getElementById("txtMAC2");
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
-		var btnSetMac = document.getElementById("btnSaveMAC");
+		var btnSetMac = document.getElementById("btnSaveMAC"	);
 
 		var machineMacAddress = document.getElementById("txtMAC2");
 		var machineVolume = document.getElementById("txtVolume2");
 		var machineBase = document.getElementById("txtBase2");
 		var machineStations = document.getElementById("txtStation2");
 
-		function initMacAddress2(){
+		function loadMachineMacAddress(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -30,7 +30,7 @@
 			}
 		}
 
-		function initBase2(){
+		function loadMachineBase(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -40,7 +40,7 @@
 			}
 		}
 
-		function initVolume2(){
+		function loadMachineVolume(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -50,7 +50,7 @@
 			}
 		}
 
-		function initStation2(){
+		function loadMachineStation(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -294,10 +294,10 @@
 		});
 
 		window.onload = function() {
-			initVolume2();
-			initBase2();
-			initStation2();
-			initMacAddress2();
+			loadMachineVolume();
+			loadMachineBase();
+			loadMachineStation();
+			loadMachineMacAddress();
 			initVolume();
 			initBase();
 			initStation();
