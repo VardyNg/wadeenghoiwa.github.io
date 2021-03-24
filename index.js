@@ -73,8 +73,8 @@ document.write(`
 				</form>
 			</tr>
 		</table>
-		<hr width="100%" size="4" color="CD5C5C" />
 		<br>
+		<hr width="100%" size="4" color="CD5C5C" />
 
 	<h3>Notes: </h3>
 	<ul>
