@@ -5,7 +5,7 @@ document.write(`
     <h1>Successful!</h1>
     <a>MAC address saved! Power cycle or reset the board to begin using the new MAC address.</a>
 
-    <p>You will be redirected in <span id="counter">10</span> second(s).</p>
+    <p>You will be redirected in <span id="counter">5</span> second(s).</p>
     <script type="text/javascript">
     function countdown() {
         var i = document.getElementById('counter');
