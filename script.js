@@ -17,15 +17,14 @@
 
 		// MAC ADDRESS
 		var macAddressField = document.getElementById("txtMAC");
-		var macAddressField2 = document.getElementById("txtMAC2");
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
 		// MACHINE INFORMATION
-		var machineMacAddress = document.getElementById("txtMAC2");
-		var machineVolume = document.getElementById("txtVolume2");
-		var machineBase = document.getElementById("txtBase2");
-		var machineStations = document.getElementById("txtStation2");
+		var machineMacAddress = document.getElementById("machineMacAddress");
+		var machineVolume = document.getElementById("machineVolume");
+		var machineBase = document.getElementById("machineBase");
+		var machineStations = document.getElementById("machineStation");
 
 		// load machine mac
 		function loadMachineMacAddress(){
@@ -261,9 +260,7 @@
 				console.log("This browser doesn not support localStorage");
 				return false;
 			}else{
-				var address = macAddressField2.value;//document.getElementById("macAddress").value;
-				console.log("Mac address is "+ address);
-				console.log("Mac address is "+ macAddressField2.value);
+				var address = machineMacAddress.value;//document.getElementById("macAddress").value;
 				window.localStorage["MACAddress"] = address;
 				macAddressField.value = window.localStorage["MACAddress"];
 			}
