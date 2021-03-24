@@ -15,6 +15,50 @@
 		var macAddressInvalidWarning = document.getElementById("MacAddressInvalidWarning");
 		var btnSetMac = document.getElementById("btnSaveMAC");
 
+		var machineMacAddress = document.getElementById("txtMAC2");
+		var machineVolume = document.getElementById("txtVolume2");
+		var machineBase = document.getElementById("txtBase2");
+		var machineStations = document.getElementById("txtStation2");
+
+		function initMacAddress2(){
+			if(!window.localStorage){
+				console.log("This browser doesn not support localStorage");
+				return false;
+			}else{
+				console.log("Mac address set");
+				window.localStorage["MACAddress"] = machineMacAddress.value;		 			
+			}
+		}
+
+		function initBase2(){
+			if(!window.localStorage){
+				console.log("This browser doesn not support localStorage");
+				return false;
+			}else{
+				console.log("base");
+				window.localStorage["base2"] = machineBase.value;		 			
+			}
+		}
+
+		function initVolume2(){
+			if(!window.localStorage){
+				console.log("This browser doesn not support localStorage");
+				return false;
+			}else{
+				console.log("volume set");
+				window.localStorage["volume2"] = machineVolume.value;		 			
+			}
+		}
+
+		function initStation2(){
+			if(!window.localStorage){
+				console.log("This browser doesn not support localStorage");
+				return false;
+			}else{
+				console.log("station set");
+				window.localStorage["station2"] = machineStations.value;		 			
+			}
+		}
 
 	// perform volumne change in machine after user releases the slider
 	volumeSlider.onmouseup = function() {
@@ -250,9 +294,9 @@
 	});
 
 	window.onload = function() {
-	  	//initVolume();
-	  	//initBase();
-	  	//initStation();
-		//initalMacAddress();
+	  	initVolume2();
+	  	initBase2();
+	  	initStation2();
+		initalMacAddress2();
 		console.log("window loaded");
 	}
