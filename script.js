@@ -27,6 +27,7 @@
 		var machineBase = document.getElementById("txtBase2");
 		var machineStations = document.getElementById("txtStation2");
 
+		// load machine mac
 		function loadMachineMacAddress(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
@@ -36,7 +37,8 @@
 				window.localStorage["MACAddress"] = machineMacAddress.value;		 			
 			}
 		}
-
+		
+		// load machine base
 		function loadMachineBase(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
@@ -47,6 +49,7 @@
 			}
 		}
 
+		// load machine volume
 		function loadMachineVolume(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
@@ -57,6 +60,7 @@
 			}
 		}
 
+		// load machine station
 		function loadMachineStation(){
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
@@ -127,6 +131,7 @@
 					var volumeString = localStorage.getItem('volume').toString();
 					if(localStorage.getItem('volume') < 10){
 						volumeIndicator.innerHTML = paddingString.concat(volumeString);
+						volumeIndicator.innerHTML = volumeString;
 						console.log("padding added");
 					}else{
 						volumeIndicator.innerHTML = volumeString;
@@ -209,6 +214,7 @@
 					
 					if(localStorage.getItem('base') < 10){
 						baseIndicator.innerHTML = paddingString.concat(baseString);
+						baseIndicator.innerHTML = baseString;
 						console.log("padding added");
 					}else{
 						baseIndicator.innerHTML = baseString;
