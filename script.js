@@ -289,6 +289,10 @@
 			window.localStorage["MACAddress"] = macAddressField.value;
 		});
 
+		function reloadPage(){
+			window.location = window.location.href.split("?")[0];
+		}
+
 		window.onload = function() {
 			loadMachineVolume();
 			loadMachineBase();
