@@ -1,3 +1,4 @@
+// By Ng Hoi Wa @ 2021
 document.write(`
 		<table>
 			<!-- MAC ADDRESS -->
@@ -80,8 +81,5 @@ document.write(`
 	<ul>
 		<li><a>When you changed any attribute by pressing physical buttons, please </a><button type="button" onclick="reloadPage();">click here to Reload.</button></li>
 		<li><a>Avoid adjusting too miany values at the same time, otherwise the machine may overload.</a></li>
-
 	</ul>
-
-
 `);
