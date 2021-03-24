@@ -1,6 +1,5 @@
 document.write(`
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "DTD/xhtml1-strict.dtd">
-<html>
+
 <head>
 
 	<title>2021 S1 Internet Radio App</title>
