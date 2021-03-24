@@ -82,4 +82,6 @@ document.write(`
 			-->
 			<hr width="100%" size="4" color="CD5C5C" />
 		</table>
+
+	<input type="submit" onClick="reloadPage">Reload</input>
 `);
