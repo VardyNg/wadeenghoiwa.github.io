@@ -250,9 +250,9 @@
 	});
 
 	window.onload = function() {
-	  	initVolume();
-	  	initBase();
-	  	initStation();
-		initalMacAddress();
+	  	//initVolume();
+	  	//initBase();
+	  	//initStation();
+		//initalMacAddress();
 		console.log("window loaded");
 	}
