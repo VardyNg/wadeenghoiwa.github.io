@@ -35,7 +35,7 @@ document.write(`
 				<form method="get" action="index.htm">
 					<table>
 						<tr>
-							<td><img src="https://https://wadeenghoiwa.github.io/img/base.webp" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
+							<td><img src="https://wadeenghoiwa.github.io/img/base.webp" alt="HTML5 Icon" style="width:20px;height:20px;"></td>
 							<td>&nbsp;</td>
 							<td style="width:71px"><b>Bass:</b></td>
 							<td>&nbsp;</td>
