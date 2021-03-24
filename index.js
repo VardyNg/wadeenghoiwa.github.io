@@ -79,7 +79,7 @@ document.write(`
 	<h3>Notes: </h3>
 	<ul>
 		<li><a>When you changed any attribute by pressing physical buttons, please </a><button type="button" onclick="reloadPage();">click here to Reload.</button></li>
-		<li><a>Avoid adjusting too miany values on the same time, otherwise the machine may overload. </a></li>
+		<li><a>Avoid adjusting too miany values at the same time, otherwise the machine may overload.</a></li>
 
 	</ul>
 
