@@ -1,5 +1,7 @@
   
 document.write(`
+<html> 
+  <head>
   <script src="https://wadeenghoiwa.github.io/header.js"></script> 
 
     <h1>Successful!</h1>
@@ -21,4 +23,6 @@ document.write(`
 
 
   <script src="https://wadeenghoiwa.github.io/footer.js"></script> 
+
+</html>
 `);
