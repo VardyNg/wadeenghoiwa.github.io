@@ -1,9 +1,6 @@
 document.write(`
   <script src="https://wadeenghoiwa.github.io/header.js"></script> 
-
-	<div>
-		<h1>WELCOME TO INTERNET RADIO APPLICATION</h1>
-		<hr width="100%" size="4" color="436ab7" />
+~volume~
 		<table>
 			<!-- MAC ADDRESS -->
 			<tr>
