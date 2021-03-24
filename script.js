@@ -96,7 +96,7 @@
 			var paddingString = paddingZero.toString();
 			var volumeString = this.value.toString();
 			if(this.value < 10){
-				//volumeIndicator.innerHTML = paddingString.concat(volumeString);
+				volumeIndicator.innerHTML = paddingString.concat(volumeString);
 			}else{
 				volumeIndicator.innerHTML = volumeString;
 			}
@@ -126,7 +126,7 @@
 					var paddingString = paddingZero.toString();
 					var volumeString = localStorage.getItem('volume').toString();
 					if(localStorage.getItem('volume') < 10){
-						//volumeIndicator.innerHTML = paddingString.concat(volumeString);
+						volumeIndicator.innerHTML = paddingString.concat(volumeString);
 						console.log("padding added");
 					}else{
 						volumeIndicator.innerHTML = volumeString;
@@ -153,7 +153,7 @@
 			var paddingString = paddingZero.toString();
 			var baseString = this.value.toString();
 			if(localStorage.getItem('volume') < 10){
-				//baseIndicator.innerHTML = paddingString.concat(baseString);
+				baseIndicator.innerHTML = paddingString.concat(baseString);
 			}else{
 				baseIndicator.innerHTML = baseString;
 			}
@@ -208,7 +208,7 @@
 					baseSlider.value = localStorage.getItem('base').toString();			
 					
 					if(localStorage.getItem('base') < 10){
-						//baseIndicator.innerHTML = paddingString.concat(baseString);
+						baseIndicator.innerHTML = paddingString.concat(baseString);
 						console.log("padding added");
 					}else{
 						baseIndicator.innerHTML = baseString;
