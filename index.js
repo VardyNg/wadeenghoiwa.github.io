@@ -7,10 +7,10 @@ document.write(`
 						<tr>
 							<td><b>MAC Address:</b></td><td>&nbsp;</td>
 							<td><input name="txtMAC" id="txtMAC" type="text" value="~config_mac~"/></td>
-							<td><input name="btnSaveMAC" id="btnSaveMAC" type="submit" value="Save" /></td> 
+							<td><input name="btnSaveMAC" id="btnSaveMAC" type="submit" value="Save" /></td>
 							<td><span style="color:red;" id="MacAddressInvalidWarning"></span></td>
 						</tr>
-					</table>				
+					</table>
 				</form>
 			</tr>
 			<tr>
@@ -75,13 +75,13 @@ document.write(`
 		</table>
 		<hr width="100%" size="4" color="CD5C5C" />
 		<br>
-	
+
 	<h3>Note: </h3>
 	<ul>
-		<li><a>When you changed any attribute by physical button, </a><button type="button" onclick="reloadPage();">Click here to Reload.</button></li>
+		<li><a>When you changed any attribute by physical buttons, </a><button type="button" onclick="reloadPage();">Click here to Reload.</button></li>
 		<li><a>Avoid adjusting too miany values on the same time, otherwise the machine may overload. </a></li>
 
 	</ul>
 
- 
+
 `);
