@@ -1,4 +1,4 @@
-
+// By Ng Hoi Wa @ 2021
 	type="text/javascript"
 		// VOLUME
 		var volumeSlider = document.getElementById("volumeSlider"); // the volume slider 
@@ -6,7 +6,7 @@
 		var btnSetVolume = document.getElementById("btnVolSet"); // hidden button to submit the form
 
 		// BASE
-		var baseSlider = document.getElementById("baseSlider"); // the base slider 
+		var baseSlider = document.getElementById("baseSlider"); // the base slider
 		var baseIndicator = document.getElementById("baseIndicator"); // the base index
 		var btnSetBase = document.getElementById("btnBaseSet"); // hidden button to submit the form
 
@@ -33,10 +33,10 @@
 				return false;
 			}else{
 				console.log("Machine Mac Address loaded");
-				window.localStorage["MACAddress"] = machineMacAddress.value;		 			
+				window.localStorage["MACAddress"] = machineMacAddress.value;
 			}
 		}
-		
+
 		// load machine base
 		function loadMachineBase(){
 			if(!window.localStorage){
@@ -44,7 +44,7 @@
 				return false;
 			}else{
 				console.log("Machine Base Address loaded");
-				window.localStorage["base"] = machineBase.value;		 			
+				window.localStorage["base"] = machineBase.value;
 			}
 		}
 
@@ -55,7 +55,7 @@
 				return false;
 			}else{
 				console.log("Machine Volume Address loaded");
-				window.localStorage["volume"] = machineVolume.value;		 			
+				window.localStorage["volume"] = machineVolume.value;
 			}
 		}
 
@@ -66,7 +66,7 @@
 				return false;
 			}else{
 				console.log("Machine Station Address loaded");
-				window.localStorage["station"] = machineStations.value;		 			
+				window.localStorage["station"] = machineStations.value;
 			}
 		}
 
@@ -108,7 +108,7 @@
 		// call when page loads
 		function initVolume(){
 			console.log("initVolume called");
-			// check if the browser support localStorage 
+			// check if the browser support localStorage
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -117,16 +117,16 @@
 				// check if the page is loaded in the browser at the first time, create a variable to store the volume
 				if(localStorage.getItem("volume") === null){
 					console.log("volume is not created, initalized");
-					storage["volume"] = 6;		
+					storage["volume"] = 6;
 					adjustVolume(localStorage.getItem("volume"));
-					volumeSlider.value = localStorage.getItem('volume').toString();				
+					volumeSlider.value = localStorage.getItem('volume').toString();
 				}else{
 				// if the page is previously loaded (reloaded in the brwoser), set the volume back to previously defined value
 					volumeSlider.value = localStorage.getItem('volume').toString();
 					console.log("volume is set back to" + localStorage.getItem('volume'));
 					var volumeString = localStorage.getItem('volume').toString();
 					volumeIndicator.innerHTML = volumeString;
-					
+
 				}
 			}
 		}
@@ -142,7 +142,7 @@
 			}
 		}
 
-		// perform base change in machine after 
+		// perform base change in machine after
 		baseSlider.onmouseup = function(){
 			var paddingZero = 0;
 			var paddingString = paddingZero.toString();
@@ -165,7 +165,7 @@
 			adjustBase(this.value);
 		}
 
-		// update the baseIndicator whenever the slider has value update, so that the wbpages 
+		// update the baseIndicator whenever the slider has value update, so that the wbpages
 		baseSlider.oninput = function(){
 
 			var paddingZero = 0;
@@ -181,7 +181,7 @@
 		// call when page loads
 		function initBase(){
 			console.log("initBase called");
-			// check if the browser support localStorage 
+			// check if the browser support localStorage
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -190,16 +190,16 @@
 				// check if the page is loaded in the browser at the first time, create a variable to store the base
 				if(localStorage.getItem("base") === null){
 					console.log("base is not created, initalized");
-					storage["base"] = 6;		
+					storage["base"] = 6;
 					adjustBase(localStorage.getItem("base"));
-					baseSlider.value = localStorage.getItem('base').toString();				
+					baseSlider.value = localStorage.getItem('base').toString();
 				}else{
 				// if the page is previously loaded (reloaded in the brwoser), set the base back to previously defined value
 					console.log("base is set back to" + localStorage.getItem('base'));
 					var baseString = localStorage.getItem('base').toString();
-					baseSlider.value = localStorage.getItem('base').toString();			
+					baseSlider.value = localStorage.getItem('base').toString();
 					baseIndicator.innerHTML = baseString;
-					
+
 				}
 			}
 		}
@@ -227,7 +227,7 @@
 		// call when page loads
 		function initStation(){
 			console.log("initStation called");
-			// check if the browser support localStorage 
+			// check if the browser support localStorage
 			if(!window.localStorage){
 				console.log("This browser doesn not support localStorage");
 				return false;
@@ -236,7 +236,7 @@
 				// check if the page is loaded in the browser at the first time, create a variable to store the selected station
 				if(localStorage.getItem("station") === null){
 					console.log("station is not created, initalized");
-					storage["station"] = 1;		
+					storage["station"] = 1;
 				}else{
 				// if the page is previously loaded (reloaded in the brwoser), set the base back to previously defined value
 					//baseSlider.value = localStorage.getItem('station').toString();
@@ -253,7 +253,7 @@
 			btnSetStation.click();
 		}
 
-		// load and display mac address from memory 
+		// load and display mac address from memory
 		function initalMacAddress(){
 			console.log("inital mac address called");
 			if(!window.localStorage){
@@ -275,7 +275,7 @@
 				macAddressInvalidWarning.textContent = "Invalid Mac Address!";
 				btnSaveMAC.disabled = true;
 			}else{
-				macAddressInvalidWarning.textContent = "";		
+				macAddressInvalidWarning.textContent = "";
 				btnSaveMAC.disabled = false;
 			}
 		}

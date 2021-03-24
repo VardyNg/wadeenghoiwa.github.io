@@ -1,8 +1,8 @@
-  
+// By Ng Hoi Wa @ 2021  
 document.write(`
-<html> 
+<html>
   <head>
-  <script src="https://wadeenghoiwa.github.io/header.js"></script> 
+  <script src="https://wadeenghoiwa.github.io/header.js"></script>
 
     <h1>Successful!</h1>
     <a>MAC address saved! Power cycle or reset the board to begin using the new MAC address.</a>
@@ -22,7 +22,7 @@ document.write(`
     </script>
 
 
-  <script src="https://wadeenghoiwa.github.io/footer.js"></script> 
+  <script src="https://wadeenghoiwa.github.io/footer.js"></script>
 
 </html>
 `);

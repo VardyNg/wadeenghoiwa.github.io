@@ -1,4 +1,4 @@
-
+// By Ng Hoi Wa @ 2021
 document.write(`
 	<title>2021 S1 Internet Radio App</title>
 	<link href="https://wadeenghoiwa.github.io/mchp.css" rel="stylesheet" type="text/css" />
@@ -16,7 +16,7 @@ document.write(`
 	  background-repeat: no-repeat;
 	  background-size: cover;">
 
-	<div style="padding:0 0 5px 5px"> 
+	<div style="padding:0 0 5px 5px">
 		<img src="https://www.polyu.edu.hk/assets/img/main-logo-1x.png" alt="HTML5 Icon" style="height:72px;"/>
 	</div>
 
