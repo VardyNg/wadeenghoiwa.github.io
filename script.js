@@ -125,18 +125,9 @@
 				// if the page is previously loaded (reloaded in the brwoser), set the volume back to previously defined value
 					volumeSlider.value = localStorage.getItem('volume').toString();
 					console.log("volume is set back to" + localStorage.getItem('volume'));
-
-					var paddingZero = 0;
-					var paddingString = paddingZero.toString();
 					var volumeString = localStorage.getItem('volume').toString();
-					if(localStorage.getItem('volume') < 10){
-						volumeIndicator.innerHTML = paddingString.concat(volumeString);
-						volumeIndicator.innerHTML = volumeString;
-						console.log("padding added");
-					}else{
-						volumeIndicator.innerHTML = volumeString;
-						console.log("padding is not added");
-					}
+					volumeIndicator.innerHTML = volumeString;
+					
 				}
 			}
 		}
@@ -206,20 +197,10 @@
 				}else{
 				// if the page is previously loaded (reloaded in the brwoser), set the base back to previously defined value
 					console.log("base is set back to" + localStorage.getItem('base'));
-
-					var paddingZero = 0;
-					var paddingString = paddingZero.toString();
 					var baseString = localStorage.getItem('base').toString();
 					baseSlider.value = localStorage.getItem('base').toString();			
+					baseIndicator.innerHTML = baseString;
 					
-					if(localStorage.getItem('base') < 10){
-						baseIndicator.innerHTML = paddingString.concat(baseString);
-						baseIndicator.innerHTML = baseString;
-						console.log("padding added");
-					}else{
-						baseIndicator.innerHTML = baseString;
-						console.log("padding is not added");
-					}
 				}
 			}
 		}
