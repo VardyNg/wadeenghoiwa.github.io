@@ -1,33 +1,5 @@
 document.write(`
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 STRICT//EN" "DTD/xhtml1-strict.dtd">
-<html>
-<head>
-
-	<title>2021 S1 Internet Radio App</title>
-	<link href="https://wadeenghoiwa.github.io/mchp.css" rel="stylesheet" type="text/css" />
-	<script src="https://wadeenghoiwa.github.io/script.js"></script>
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
-</head>
-<body onLoad="allowAJAX=true;" onUnload="allowAJAX=false;">
-	<div id="shadow-one">
-	<div id="shadow-two">
-	<div id="shadow-three">
-	<div id="shadow-four">
-	<div id="page" style=" background-color : FFFFFF; height: 50%;
-	  background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;">
-
-	<div style="padding:0 0 5px 5px"> 
-		<img src="https://www.polyu.edu.hk/assets/img/main-logo-1x.png" alt="HTML5 Icon" style="height:72px;"/>
-	</div>
-
-
-	<div id="title" style="background-color:rgb(255, 255, 31);color:black;">
-		<div class="left">TM1109 EIE IMT Project </div>
-	</div>
+  <script src="https://wadeenghoiwa.github.io/header.js"></script> 
 
 	<div>
 		<h1>WELCOME TO INTERNET RADIO APPLICATION</h1>
@@ -116,12 +88,4 @@ document.write(`
 			<hr width="100%" size="4" color="CD5C5C" />
 		</table>
 	</div>
-	<script src="https://wadeenghoiwa.github.io/script.js"></script>
-	<div class="spacer">&nbsp;</div>
-
-<div id="footer">Developed by IC2140 2021 S1 </div>
-
-</div></div></div></div></div>
-</body>
-</html>
-`);
+<script src="https://wadeenghoiwa.github.io/footer.js"></script> 
