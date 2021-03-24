@@ -9,4 +9,3 @@ document.write(`
 </body>
 </html>
 `);
-`);
