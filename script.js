@@ -101,7 +101,6 @@
 					volumeIndicator.innerHTML = volumeString;
 
 				}
-			}
 		}
 
 		// adjust volume in the machine
