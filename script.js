@@ -1,7 +1,7 @@
 // By Ng Hoi Wa @ 2021
 	type="text/javascript"
 		// VOLUME
-		var volumeSlider = document.getElementById("volumeSlider"); // the volume slider 
+		var volumeSlider = document.getElementById("volumeSlider"); // the volume slider
 		var volumeIndicator = document.getElementById("volumeIndicator"); // the volume index
 		var btnSetVolume = document.getElementById("btnVolSet"); // hidden button to submit the form
 
@@ -28,46 +28,26 @@
 
 		// load machine mac
 		function loadMachineMacAddress(){
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				console.log("Machine Mac Address loaded");
 				window.localStorage["MACAddress"] = machineMacAddress.value;
-			}
 		}
 
 		// load machine base
 		function loadMachineBase(){
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				console.log("Machine Base Address loaded");
 				window.localStorage["base"] = machineBase.value;
-			}
 		}
 
 		// load machine volume
 		function loadMachineVolume(){
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				console.log("Machine Volume Address loaded");
 				window.localStorage["volume"] = machineVolume.value;
-			}
 		}
 
 		// load machine station
 		function loadMachineStation(){
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				console.log("Machine Station Address loaded");
 				window.localStorage["station"] = machineStations.value;
-			}
 		}
 
 		// perform volumne change in machine after user releases the slider
@@ -81,14 +61,10 @@
 				volumeIndicator.innerHTML = volumeString;
 			}
 
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
-				// set volume in loclaStorage
-				var storage=window.localStorage;
-				storage["volume"] = this.value;
-			}
+			// set volume in loclaStorage
+			var storage=window.localStorage;
+			storage["volume"] = this.value;
+
 			// adjust volume in the machine
 			adjustVolume(this.value);
 		}
@@ -108,12 +84,9 @@
 		// call when page loads
 		function initVolume(){
 			console.log("initVolume called");
-			// check if the browser support localStorage
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
+
 				var storage=window.localStorage;
+
 				// check if the page is loaded in the browser at the first time, create a variable to store the volume
 				if(localStorage.getItem("volume") === null){
 					console.log("volume is not created, initalized");
@@ -153,14 +126,10 @@
 				baseIndicator.innerHTML = baseString;
 			}
 
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				// set base in loclaStorage
 				var storage=window.localStorage;
 				storage["base"] = this.value;
-			}
+
 			// adjust volume in the machine
 			adjustBase(this.value);
 		}
@@ -181,11 +150,7 @@
 		// call when page loads
 		function initBase(){
 			console.log("initBase called");
-			// check if the browser support localStorage
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
+
 				var storage=window.localStorage;
 				// check if the page is loaded in the browser at the first time, create a variable to store the base
 				if(localStorage.getItem("base") === null){
@@ -199,9 +164,7 @@
 					var baseString = localStorage.getItem('base').toString();
 					baseSlider.value = localStorage.getItem('base').toString();
 					baseIndicator.innerHTML = baseString;
-
 				}
-			}
 		}
 
 		// adjust base in the machine
@@ -212,14 +175,9 @@
 
 		// change station when a new option is picked
 		stationDropDownMenu.onchange = function (){
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				// set station in loclaStorage
 				var storage=window.localStorage;
 				storage["station"] = this.value;
-			}
 			// adjust volume in the machine
 			changeStation(this.value);
 		}
@@ -227,11 +185,7 @@
 		// call when page loads
 		function initStation(){
 			console.log("initStation called");
-			// check if the browser support localStorage
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
+
 				var storage=window.localStorage;
 				// check if the page is loaded in the browser at the first time, create a variable to store the selected station
 				if(localStorage.getItem("station") === null){
@@ -239,12 +193,9 @@
 					storage["station"] = 1;
 				}else{
 				// if the page is previously loaded (reloaded in the brwoser), set the base back to previously defined value
-					//baseSlider.value = localStorage.getItem('station').toString();
-					//baseIndicator.innerHTML = localStorage.getItem('station').toString();
 					console.log("station is set back to" + localStorage.getItem('station'));
 				}
 				stationDropDownMenu.selectedIndex = localStorage.getItem('station') - 1;
-			}
 		}
 
 		// perform change station
@@ -256,14 +207,9 @@
 		// load and display mac address from memory
 		function initalMacAddress(){
 			console.log("inital mac address called");
-			if(!window.localStorage){
-				console.log("This browser doesn not support localStorage");
-				return false;
-			}else{
 				var address = machineMacAddress.value;//document.getElementById("macAddress").value;
 				window.localStorage["MACAddress"] = address;
 				macAddressField.value = window.localStorage["MACAddress"];
-			}
 		}
 
 		// mac address validation
@@ -280,12 +226,13 @@
 			}
 		}
 
-		// update mac address in memory
+		// also update mac address in memory
 		btnSetMac.addEventListener("click", function() {
 			console.log("btnSetMac clicked");
 			window.localStorage["MACAddress"] = macAddressField.value;
 		});
 
+		// reload the page without parameters
 		function reloadPage(){
 			window.location = window.location.href.split("?")[0];
 		}

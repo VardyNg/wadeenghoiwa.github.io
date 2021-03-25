@@ -1,3 +1,4 @@
+/* By Ng Hoi Wa @ 2021 */
 document.write(`
   	</div>
 	<script src="script.js"></script>
